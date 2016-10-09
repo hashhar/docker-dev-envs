@@ -1,0 +1,57 @@
+# ===== Global/Linux.gitignore ===== #
+# ===== Global/Linux.gitignore ===== #
+*~
+
+# temporary files which can be created if a process still has a handle open of a deleted file
+.fuse_hidden*
+
+# KDE directory preferences
+.directory
+
+# Linux trash folder which might appear on any partition or disk
+.Trash-*
+
+# .nfs files are created when an open file is removed but is still being accessed
+.nfs*
+
+# ===== Global/Windows.gitignore ===== #
+# ===== Global/Windows.gitignore ===== #
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
+
+# ===== Global/Vim.gitignore ===== #
+# ===== Global/Vim.gitignore ===== #
+# swap
+[._]*.s[a-w][a-z]
+[._]s[a-w][a-z]
+# session
+Session.vim
+# temporary
+.netrwhist
+*~
+# auto-generated tag files
+tags
+
+# ===== Global/VisualStudioCode.gitignore ===== #
+# ===== Global/VisualStudioCode.gitignore ===== #
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+

@@ -1,0 +1,48 @@
+# -*- mode: python -*-
+# -*- coding: utf-8 -*-
+
+# edit this file to match your settings and copy it to ~/.config/jhbuildrc
+
+# if you have a GNOME git account, uncomment this line
+# repos['git.gnome.org'] = 'ssh://user@git.gnome.org/git/'
+
+# Use https:// wherever possible
+repos['git.gnome.org'] = 'https://git.gnome.org/browse/'
+repos['git.freedesktop.org'] = 'http://anongit.freedesktop.org/git/'
+repos['wayland.freedesktop.org'] = 'http://anongit.freedesktop.org/git/wayland'
+repos['gstreamer.freedesktop.org'] = 'http://anongit.freedesktop.org/git/gstreamer'
+repos['pulseaudio.freedesktop.org'] = 'http://anongit.freedesktop.org/git/pulseaudio'
+repos['telepathy.freedesktop.org'] = 'http://anongit.freedesktop.org/git/telepathy'
+repos['modemmanager.freedesktop.org'] = 'http://anongit.freedesktop.org/git/ModemManager'
+repos['git.savannah.nongnu.org'] = 'http://git.savannah.gnu.org/r/'
+repos['github.com'] = 'https://github.com/'
+
+# what module set should be used.  The default can be found in
+# jhbuild/defaults.jhbuildrc, but can be any file in the modulesets directory
+# or a URL of a module set file on a web server.
+# moduleset = 'gnome-apps-3.12'
+#
+# A list of the modules to build.  Defaults to the GNOME core and tested apps.
+# modules = [ 'meta-gnome-core', 'meta-gnome-apps-tested' ]
+
+# Or to build the old GNOME 2.32:
+# moduleset = 'gnome2/gnome-2.32'
+# modules = ['meta-gnome-desktop']
+
+# what directory should the source be checked out to and the build tree be placed in?
+checkoutroot = '~/checkout'
+buildroot = '~/build'
+
+# the prefix to configure/install modules to (must have write access)
+prefix = '~/install'
+
+# custom CFLAGS / environment pieces for the build
+# os.environ['CFLAGS'] = '-Wall -g -O0'
+
+# extra arguments to pass to all autogen.sh scripts
+# to speed up builds of GNOME, try '--disable-static --disable-gtk-doc'
+#autogenargs=''
+
+# A string listing additional arguments to be passed to make.
+# Set makeargs to 'V=1' for verbose build output.
+#makeargs = ''
